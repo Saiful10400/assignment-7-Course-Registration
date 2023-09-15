@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./assets/components/header";
 import CadrSecton from "./assets/components/cards section";
+import CartLIst from "./assets/components/cart list";
 
 function App() {
   const [data, setData] = useState([]);
@@ -12,19 +13,35 @@ function App() {
       .then((data) => setData(data));
   }, []);
 
-
   // onclick state.
 
-  const[onClickData,onClickDataSet]=useState([])
+  const [onClickData, onClickDataSet] = useState([]);
 
   // button click event heandle.
 
+  let onclickFunction = (itemData) => {
+    
+    // let data=[...onClickData,itemData]
 
-  let onclickFunction=(itemData)=>{
-    const value=[...onClickData,itemData]
-    onClickDataSet(value)
+
+
+ let justification=()=>{
+
+  for(let element of onClickData){
+    if(element.title===itemData.title){
+      return [...onClickData]
+    }
   }
-  console.log(onClickData)
+  return [...onClickData,itemData]
+ }
+
+let data=justification()
+
+    onClickDataSet(data)
+   
+  };
+
+
 
   return (
     <>
@@ -36,25 +53,28 @@ function App() {
           {/* for card secton */}
           <div className="grid grid-cols-3 w-3/4 gap-6">
             {data.map((item) => (
-              <CadrSecton key={item.id} onclickFunction={onclickFunction} item={item}></CadrSecton>
+              <CadrSecton
+                key={item.id}
+                onclickFunction={onclickFunction}
+                item={item}
+              ></CadrSecton>
             ))}
           </div>
 
-
-
           {/* for cart section. */}
           <div className="w-1/4 p-6 bg-white rounded-xl h-[max-content]">
-            <h1 className="text-xl text-blue-500 font-bold px-4 border-b-2 border-r-gray-400 text-center">
+            <h1 className="text-xl text-blue-500 font-bold py-4 border-b-2 border-r-gray-400 text-center">
               Credit Hour Remaining 7 hr
             </h1>
             <h1 className="text-2xl text-black font-bold text-start mt-4">
               Course Name
             </h1>
 
-              <ol className="my-6 list-decimal font-normal text-base text-gray-600 ml-5">
-                <li>hellow saiufl</li>
-                <li>hellow gourob.</li>
-              </ol>
+            <ol className="my-6 list-decimal font-normal text-base text-gray-600 ml-5">
+              {onClickData.map((item) => (
+                <CartLIst tittle={item.title} key={item.id}></CartLIst>
+              ))}
+            </ol>
 
             <h1 className="text-base font-semibold text-gray-800 py-4 border-y-2 border-gray-400 mb-4">
               Total Credit Hour : 13
