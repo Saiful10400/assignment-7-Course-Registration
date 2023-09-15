@@ -12,6 +12,20 @@ function App() {
       .then((data) => setData(data));
   }, []);
 
+
+  // onclick state.
+
+  const[onClickData,onClickDataSet]=useState([])
+
+  // button click event heandle.
+
+
+  let onclickFunction=(itemData)=>{
+    const value=[...onClickData,itemData]
+    onClickDataSet(value)
+  }
+  console.log(onClickData)
+
   return (
     <>
       <section className=" w-11/12 mx-auto">
@@ -22,7 +36,7 @@ function App() {
           {/* for card secton */}
           <div className="grid grid-cols-3 w-3/4 gap-6">
             {data.map((item) => (
-              <CadrSecton item={item}></CadrSecton>
+              <CadrSecton key={item.id} onclickFunction={onclickFunction} item={item}></CadrSecton>
             ))}
           </div>
 

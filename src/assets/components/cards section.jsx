@@ -1,7 +1,7 @@
 
 import { BiDollar } from "react-icons/bi";
 import { TbBook } from "react-icons/tb";
-const CadrSecton = ({item}) => {
+const CadrSecton = ({item,onclickFunction}) => {
     const{title,details,price,credit,image}=item
     return (
         <div className="p-4 rounded-xl bg-white">
@@ -14,7 +14,7 @@ const CadrSecton = ({item}) => {
                 
                 <span className="flex items-center gap-1" ><TbBook/>Credit : {credit}</span>
             </div>
-            <button className="text-white py-2 w-full bg-blue-500 rounded-lg text-lg font-semibold">Select</button>
+            <button onClick={()=>onclickFunction(item)} className="text-white py-2 w-full bg-blue-500 rounded-lg text-lg font-semibold">Select</button>
         </div>
     );
 };
