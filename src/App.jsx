@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+
 function App() {
+  const [data, setData] = useState([]);
 
-  const[data,setData]=useState([])
-
-  useEffect(()=>{
+  useEffect(() => {
     fetch("data.json")
-    .then(res=>res.json())
-    .then(data=>setData(data))
-  },[])
-  console.log(data)
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+  console.log(data);
+  // toast
+
   return (
     <>
-      <h1 className="text-5xl">Vite + React</h1>
+      <h1 className="text-5xl">Vite + React  </h1>
 
     </>
   );
