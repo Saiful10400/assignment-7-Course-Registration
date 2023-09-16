@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const CartLIst = ({tittle}) => {
     return (
@@ -7,3 +7,7 @@ const CartLIst = ({tittle}) => {
 };
 
 export default CartLIst;
+
+CartLIst.propTypes = {
+  tittle: PropTypes.string
+};

@@ -1,6 +1,7 @@
 
 import { BiDollar } from "react-icons/bi";
 import { TbBook } from "react-icons/tb";
+import PropTypes from 'prop-types';
 const CadrSecton = ({item,onclickFunction}) => {
     const{title,details,price,credit,image}=item
     return (
@@ -21,4 +22,11 @@ const CadrSecton = ({item,onclickFunction}) => {
 
 export default CadrSecton;
 
+
+CadrSecton.propTypes = {
+    item: PropTypes.object,
+    onclickFunction: PropTypes.func
+    
+   
+  };
 
