@@ -4,7 +4,7 @@
       "title": "Python Fundamentals",
       "details": "In this comprehensive Python course, you will learn the basics and beyond. We cover everything from Python syntax and data types to object-oriented programming and web development using Django. By the end, you'll have a strong foundation in Python programming.",
       "price": "$49.99",
-      "credit": "30hr",
+      "credit": "3hr",
       "image": "https://i.ibb.co/qymDMpD/python-15-min-scaled.jpg"
     },
     {
@@ -12,7 +12,7 @@
       "title": "Web Development with HTML & CSS",
       "details": "Get started with web development by mastering HTML and CSS. This course will teach you how to create stunning websites, responsive layouts, and beautiful user interfaces. Dive into the world of front-end development today.",
       "price": "$59.99",
-      "credit": "40hr",
+      "credit": "4hr",
       "image": "https://i.ibb.co/PsHLWxW/img2.webp"
     },
     {
@@ -20,7 +20,7 @@
       "title": "JavaScript Mastery",
       "details": "Unlock the full potential of JavaScript with our in-depth course. From basic scripting to advanced frameworks like React and Node.js, you'll gain hands-on experience in building interactive web applications and dynamic websites.",
       "price": "$69.99",
-      "credit": "50hr",
+      "credit": "5hr",
       "image": "https://i.ibb.co/WDFsyWz/3.jpg"
     },
     {
@@ -28,7 +28,7 @@
       "title": "Java Programming for Beginners",
       "details": "Embark on your programming journey with Java. This beginner-friendly course covers Java fundamentals, object-oriented programming, and practical applications. Start coding in one of the most popular languages today.",
       "price": "$54.99",
-      "credit": "30hr",
+      "credit": "2hr",
       "image": "https://i.ibb.co/bWLCQN7/4.png"
     },
     {
@@ -36,7 +36,7 @@
       "title": "C++ Advanced Techniques",
       "details": "Take your C++ skills to the next level with advanced techniques and best practices. Explore topics like memory management, templates, and design patterns. Ideal for experienced C++ developers looking to excel.",
       "price": "$79.99",
-      "credit": "60hr",
+      "credit": "6hr",
       "image": "https://i.ibb.co/Xb0Yndh/5.jpg"
     },
     {
@@ -44,7 +44,7 @@
       "title": "Data Science with Python",
       "details": "Dive into the world of data science using Python. Learn data analysis, visualization, and machine learning. Gain practical skills to extract valuable insights from data and make informed decisions.",
       "price": "$74.99",
-      "credit": "50hr",
+      "credit": "2hr",
       "image": "https://i.ibb.co/dbb2yG0/6.jpg"
     },
     {
@@ -52,7 +52,7 @@
       "title": "Mobile App Development with React Native",
       "details": "Build cross-platform mobile apps with React Native. From setting up your development environment to deploying apps on iOS and Android, this course provides a hands-on experience in mobile app development.",
       "price": "$89.99",
-      "credit": "70hr",
+      "credit": "7hr",
       "image": "https://i.ibb.co/XtLJzS1/7.png"
     },
     {
@@ -60,7 +60,7 @@
       "title": "Machine Learning Foundations",
       "details": "Get started with machine learning! This course covers the fundamentals of ML algorithms, data preprocessing, and model evaluation. Discover the power of AI and its real-world applications.",
       "price": "$79.99",
-      "credit": "60hr",
+      "credit": "6hr",
       "image": "https://i.ibb.co/YDgDWhY/8.png"
     },
     {
@@ -68,7 +68,7 @@
       "title": "Blockchain Development",
       "details": "Enter the world of blockchain development and create decentralized applications. Explore blockchain technologies, smart contracts, and use cases in this cutting-edge course.",
       "price": "$99.99",
-      "credit": "80hr",
+      "credit": "6hr",
       "image": "https://i.ibb.co/HrW0D6c/9.jpg"
     },
     {
@@ -76,7 +76,7 @@
       "title": "Advanced Data Structures in C++",
       "details": "Explore advanced data structures like red-black trees, B-trees, and graphs using C++. Enhance your problem-solving skills and algorithmic thinking.",
       "price": "$69.99",
-      "credit": "50hr",
+      "credit": "2hr",
       "image": "https://i.ibb.co/7tgmm9s/10.jpg"
     },
     {
@@ -84,7 +84,7 @@
       "title": "Full-Stack Web Development with MERN",
       "details": "Become a full-stack developer with the MERN stack (MongoDB, Express, React, Node.js). Build and deploy web applications from scratch.",
       "price": "$79.99",
-      "credit": "60hr",
+      "credit": "6hr",
       "image": "https://i.ibb.co/BzWS0hP/11.webp"
     },
     {
@@ -92,7 +92,7 @@
       "title": "iOS App Development with Swift",
       "details": "Create iOS apps using Swift. Learn about UIKit, Core Data, and SwiftUI to build intuitive and responsive mobile applications.",
       "price": "$64.99",
-      "credit": "40hr",
+      "credit": "4hr",
       "image": "https://i.ibb.co/27DY92Q/12.png"
     }
   ]

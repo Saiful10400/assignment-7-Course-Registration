@@ -3,8 +3,29 @@ import "./App.css";
 import Header from "./assets/components/header";
 import CadrSecton from "./assets/components/cards section";
 import CartLIst from "./assets/components/cart list";
+import CreditHour from "./assets/components/cart components/creditHour";
+import BottomCredit from "./assets/components/cart components/creditHourbottom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
+let tust = () => {
+  toast.warn("You already select this item.", {
+    position: "top-center",
+    autoClose: 1000,
+    hideProgressBar: true,
+    theme: "dark",
+  });
+};
+
+
+
+
+
 
 function App() {
+
+ 
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -19,6 +40,12 @@ function App() {
 
   // button click event heandle.
 
+  // this is the value of time and price management in bookmark.
+
+
+  
+  // 
+  
   let onclickFunction = (itemData) => {
     
     // let data=[...onClickData,itemData]
@@ -29,10 +56,12 @@ function App() {
 
   for(let element of onClickData){
     if(element.title===itemData.title){
+      tust()
       return [...onClickData]
     }
   }
   return [...onClickData,itemData]
+  
  }
 
 let data=justification()
@@ -43,15 +72,19 @@ let data=justification()
 
 
 
+
+
   return (
     <>
+
       <section className=" w-11/12 mx-auto">
+      <ToastContainer></ToastContainer>
         <Header></Header>
 
         {/* this is for body section. */}
-        <section className="flex gap-7">
+        <section className="flex md:flex-row flex-col gap-7">
           {/* for card secton */}
-          <div className="grid grid-cols-3 w-3/4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-3/4 gap-6">
             {data.map((item) => (
               <CadrSecton
                 key={item.id}
@@ -62,10 +95,8 @@ let data=justification()
           </div>
 
           {/* for cart section. */}
-          <div className="w-1/4 p-6 bg-white rounded-xl h-[max-content]">
-            <h1 className="text-xl text-blue-500 font-bold py-4 border-b-2 border-r-gray-400 text-center">
-              Credit Hour Remaining 7 hr
-            </h1>
+          <div className="w-full md:w-1/4 p-6 bg-white rounded-xl h-[max-content]">
+            <CreditHour data={onClickData} ></CreditHour>
             <h1 className="text-2xl text-black font-bold text-start mt-4">
               Course Name
             </h1>
@@ -75,10 +106,9 @@ let data=justification()
                 <CartLIst tittle={item.title} key={item.id}></CartLIst>
               ))}
             </ol>
+            <BottomCredit data={onClickData}></BottomCredit>
 
-            <h1 className="text-base font-semibold text-gray-800 py-4 border-y-2 border-gray-400 mb-4">
-              Total Credit Hour : 13
-            </h1>
+
             <h1 className="font-semibold text-base text-gray-800">
               Total Price : 48000 USD
             </h1>
