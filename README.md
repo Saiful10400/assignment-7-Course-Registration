@@ -11,3 +11,6 @@ Ans: 3 projects features are--
   Question: Discuss how you managed the state in your assignment project.   
 
   Ans: In this project i use 2 react hook,one is useEffect and another is useState hook.UseEffect hook fetch json data from another location.After that transfer it into useState.As i transferred useEffect fetched data into useState,thats why i can get that data as a useState returned variable  from any scope.then i use useState data as parameter in many function and ract component.
+
+
+ # Live link: https://6505a44f1b7ad9155886d514--velvety-lokum-73a23f.netlify.app/
